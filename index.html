@@ -1,311 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Krushang Patel</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Krushang Patel</h1>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krushang Patel - ECE Student & Developer</title>
-  <meta name="description"
-    content="Portfolio of Krushang Patel - B.Tech ECE student passionate about Linux systems and software development" />
-  <link rel="icon" href="img/Portfolio.png" />
-  <link rel="stylesheet" href="style.css" />
-</head>
+        <p>Just a random person on internet who loves exploring Linux for fun, trying to identify
+        <b>skill issue</b> and trying to build <b>sys</b> for <b>life</b>.</p>
 
-<body>
-  <header>
-    <nav>
-      <div class="logo">Krushang Patel</div>
-      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
-        ☰
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <h2>Fun Facts</h2>
+        <ul>
+        <li>Explore Ubuntu for fun and now Arch btw!</li>
+        <li>What the hell is ricing? neovim + tmux enough for me (yop, i know how to exit vim)</li>
+        <li>What the hell is <b>skill issue</b>? Anyway, still figuring out ...</li>
+        <li>Here to learn, build and connect with people who get it</li>
+        </ul>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>B.Tech ECE Student & Self-Learning Developer</h1>
-        <p class="subtitle">
-          4th-year Electronics and Communication Engineering student at IIIT
-          Surat, exploring system programming, Linux automation, and
-          full-stack development through hands-on projects.
-        </p>
-        <div class="cta-buttons">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="https://github.com/krushangptl" target="_blank" class="btn btn-secondary">GitHub →</a>
-        </div>
-      </div>
+        <h2>Where to find me ???</h2>
+        <ul>
+            <li><b>Github</b><a href="https://github.com/krushangptl">github.com/krushangptl</a></li>
+            <li><b>X/Twitter</b>:<a href="https://x.com/krushang_ptl">krushang_ptl</a> (come roast my takes</li>
+            <li><b>Discord</b>:<a href="https://discordapp.com/users/krushangptl">krushangptl</a> (hit me if you wanna suffer skill issue together)</li>
+            <li><b>LinkedIn</b>:<a href="www.linkedin.com/in/krushang-d-patel">krushang-d-patel</a> (yup, exist but let's be honest, I'd rather be at X/Twitter)</li>
+        </ul>
 
-      <div class="info-cards">
-        <div class="info-card">
-          <h3>Education</h3>
-          <p>B.Tech ECE, IIIT Surat</p>
-        </div>
-        <div class="info-card">
-          <h3>CGPA</h3>
-          <p>8.21 / 10.0</p>
-        </div>
-        <div class="info-card">
-          <h3>Graduation</h3>
-          <p>June 2026</p>
-        </div>
-        <div class="info-card">
-          <h3>Location</h3>
-          <p>Gujarat, India</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">
-          Student developer passionate about learning through building
-        </p>
-      </div>
-
-      <div class="about-content">
-        <p>
-          Hi! I'm Krushang Patel, a 4th-year B.Tech student in Electronics and
-          Communication Engineering at IIIT Surat. I'm passionate about
-          understanding how systems work and learning by building practical
-          projects.
-        </p>
-
-        <p>
-          I started my development journey by exploring Linux systems and
-          shell scripting. Since then, I've worked on projects involving
-          system monitoring daemons, computer vision applications, and web
-          development. While I'm still learning, I enjoy the process of
-          debugging, experimenting with new tools, and gradually improving my
-          skills.
-        </p>
-
-        <p>
-          My interests span from low-level system programming to web
-          development, and I'm particularly drawn to projects that combine
-          software and hardware. I believe in learning by doing, and I
-          document my progress through the projects I build.
-        </p>
-
-        <div class="focus-areas">
-          <h3>Currently Learning & Exploring:</h3>
-          <ul>
-            <li>Linux system administration and daemon development</li>
-            <li>Building automation tools with Python and Bash</li>
-            <li>Computer vision applications using OpenCV</li>
-            <li>Full-stack web development with FastAPI</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="section-header">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">
-          Personal projects I've built while learning
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3 class="project-title">SysPilot</h3>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">psutil</span>
-            <span class="tech-tag">systemd</span>
-            <span class="tech-tag">Linux</span>
-          </div>
-          <p class="project-description">
-            A Linux system monitoring daemon I built to learn about background
-            processes and system metrics. It tracks CPU, memory, disk usage,
-            and other statistics, with systemd integration for scheduling.
-          </p>
-          <ul class="project-features">
-            <li>Real-time system metric collection and logging</li>
-            <li>Systemd timer integration for automated checks</li>
-            <li>Desktop notifications for system alerts</li>
-          </ul>
-          <a href="https://github.com/krushangptl/SysPilot" target="_blank" class="project-link">
-            View on GitHub →
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-title">Document Scanner with OCR</h3>
-          <div class="project-tech">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">OpenCV</span>
-            <span class="tech-tag">Tesseract</span>
-            <span class="tech-tag">NumPy</span>
-          </div>
-          <p class="project-description">
-            A document scanning application I created to explore computer
-            vision. It detects document boundaries, corrects perspective, and
-            extracts text using OCR.
-          </p>
-          <ul class="project-features">
-            <li>Automatic document boundary detection</li>
-            <li>Perspective correction and image preprocessing</li>
-            <li>Multi-language OCR support (English, Hindi, Gujarati)</li>
-            <li>Export to PDF, JPEG, and TXT formats</li>
-          </ul>
-          <a href="https://github.com/krushangptl/Doc-Scanner-Project" target="_blank" class="project-link">
-            View on GitHub →
-          </a>
-        </article>
-
-        <article class="project-card">
-          <h3 class="project-title">inkFlow</h3>
-          <div class="project-tech">
-            <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">SQLite</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Bootstrap</span>
-          </div>
-          <p class="project-description">
-            A simple blogging platform I built to learn full-stack
-            development. Features a FastAPI backend with authentication and a
-            responsive frontend for creating and managing blog posts.
-          </p>
-          <ul class="project-features">
-            <li>RESTful API with FastAPI and SQLite</li>
-            <li>User authentication and session management</li>
-            <li>Rich-text editor using Quill.js</li>
-            <li>Responsive Bootstrap frontend design</li>
-          </ul>
-          <a href="https://github.com/krushangptl/inkflow" target="_blank" class="project-link">
-            View on GitHub →
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="section-header">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Technologies I've worked with</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Programming Languages</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Bash</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">VHDL</span>
-            <span class="skill-tag">Verilog</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Web Development</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">Bootstrap</span>
-            <span class="skill-tag">SQLite</span>
-            <span class="skill-tag">REST APIs</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Tools & Systems</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">Linux</span>
-            <span class="skill-tag">Git/GitHub</span>
-            <span class="skill-tag">Vim</span>
-            <span class="skill-tag">systemd</span>
-            <span class="skill-tag">Shell Scripting</span>
-          </div>
-        </div>
-
-        <div class="skill-category">
-          <h3>Libraries & Frameworks</h3>
-          <div class="skill-tags">
-            <span class="skill-tag">NumPy</span>
-            <span class="skill-tag">OpenCV</span>
-            <span class="skill-tag">psutil</span>
-            <span class="skill-tag">Pillow</span>
-            <span class="skill-tag">Pandas</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="section-header">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">
-          Feel free to reach out for collaboration or discussion
-        </p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <div class="contact-label">Email</div>
-          <div class="contact-value">
-            <a href="mailto:krushang4201@gmail.com">krushang4201@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-label">LinkedIn</div>
-          <div class="contact-value">
-            <a href="https://linkedin.com/in/krushang-d-patel" target="_blank">/in/krushang-d-patel</a>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-label">GitHub</div>
-          <div class="contact-value">
-            <a href="https://github.com/krushangptl" target="_blank">@krushangptl</a>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-label">Location</div>
-          <div class="contact-value">Bilimora, Gujarat, India</div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 Krushang Patel.</p>
-      <div class="social-links">
-        <a href="https://github.com/krushangptl" target="_blank" aria-label="GitHub">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
-          </svg>
-        </a>
-        <a href="https://linkedin.com/in/krushang-d-patel" target="_blank" aria-label="LinkedIn">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
-            <circle cx="4" cy="4" r="2" />
-          </svg>
-        </a>
-        <a href="mailto:krushang4201@gmail.com" aria-label="Email">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke-width="2" />
-            <polyline points="22,6 12,13 2,6" stroke-width="2" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-
+        <p>Feel free to star, fork or roast my code. Always drop for chat.</p>
+        <p>Keep Grinding! And Enjoy The Journey!</p>
+        <footer>
+            <p>&copy; 2026 Krushang Patel</p>
+        </footer>
+    </body>
 </html>
